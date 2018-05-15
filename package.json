@@ -1,0 +1,30 @@
+{
+  "name": "chat-broker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "ntsc",
+    "watch": "ntsc -w",
+    "clean": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/and-campestrini/chat-broker.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/and-campestrini/chat-broker/issues"
+  },
+  "homepage": "https://github.com/and-campestrini/chat-broker#readme",
+  "devDependencies": {
+    "@types/node": "^10.0.10",
+    "@types/ws": "^5.1.1"
+  },
+  "dependencies": {
+    "ntypescript": "^1.201706190042.1",
+    "ws": "^5.1.1"
+  }
+}
