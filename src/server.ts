@@ -1,9 +1,10 @@
 import * as WebSocket from 'ws'
-import eventConstants from './eventConstants'
+import {ConfigInterface} from './config'
+import eventConstants from './events/constants'
 
-export function bootstrap() {
+export function bootstrap(config: ConfigInterface) {
     const options = {
-        port: 8080
+        port: config.port
     }
     
     const server = new WebSocket.Server(options, () => {

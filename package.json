@@ -20,10 +20,14 @@
   },
   "homepage": "https://github.com/and-campestrini/chat-broker#readme",
   "devDependencies": {
+    "@types/amqplib": "^0.5.7",
+    "@types/dotenv": "^4.0.3",
     "@types/node": "^10.0.10",
     "@types/ws": "^5.1.1"
   },
   "dependencies": {
+    "amqplib": "^0.5.2",
+    "dotenv": "^5.0.1",
     "ntypescript": "^1.201706190042.1",
     "ws": "^5.1.1"
   }
