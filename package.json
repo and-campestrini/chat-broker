@@ -22,8 +22,11 @@
   "devDependencies": {
     "@types/amqplib": "^0.5.7",
     "@types/dotenv": "^4.0.3",
+    "@types/jest": "^22.2.3",
     "@types/node": "^10.0.10",
-    "@types/ws": "^5.1.1"
+    "@types/ws": "^5.1.1",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.6"
   },
   "dependencies": {
     "amqplib": "^0.5.2",
