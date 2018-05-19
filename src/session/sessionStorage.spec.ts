@@ -39,3 +39,8 @@ it('should remove the stored session', () => {
     expect(sessionStorage.retrieveClientById(choosenSession.getId()))
         .toBeNull()
 })
+
+it('should throw a error when trying to store a client with the same id', () => {
+    const choosenSession = sessionMocks[0]
+    expect(() => sessionStorage.storeClient(choosenSession)).toThrowError('Client with same id has already been stored')
+})

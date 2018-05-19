@@ -46,6 +46,12 @@
     "moduleFileExtensions": [
       "ts",
       "js"
-    ]
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src**/*.(interface).ts?(x)"
+    ],
+    "coverageDirectory": "./coverage"
   }
 }

@@ -19,7 +19,7 @@ export default class SessionStorage implements SessionStorageInterface {
     
     storeClient(clientSession: ClientSessionInterface): void {
         if (this.hasAlreadyBeenStored(clientSession.getId())) {
-            return
+            throw new Error('Client with same id has already been stored')
         }
 
         this.addToStoredList(clientSession)
