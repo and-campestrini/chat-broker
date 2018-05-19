@@ -1,4 +1,4 @@
-import ClientSessionInterface from './clientSessionInterface'
+import ClientSessionInterface from './clientSession.interface'
 
 export default interface SessionStorageInterface {
     removeClientById(id: string): void

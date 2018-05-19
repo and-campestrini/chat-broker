@@ -1,12 +1,12 @@
-import ClientSessionInterface from './clientSessionInterface'
-import SessionStorageInterface from './sessionStorageInterface'
-import ClientSessionListInterface from './clientSessionListInterface'
+import ClientSessionInterface from './clientSession.interface'
+import SessionStorageInterface from './sessionStorage.Interface'
+import ClientSessionListInterface from './clientSessionList.interface'
 
-export class SessionStorage implements SessionStorageInterface {
+export default class SessionStorage implements SessionStorageInterface {
     private stored: ClientSessionListInterface = {}
 
     removeClientById(id: string) {
-
+        this.removeFromStoredList(id)
     }
 
     retrieveClientById(id: string): ClientSessionInterface {
@@ -23,6 +23,10 @@ export class SessionStorage implements SessionStorageInterface {
         }
 
         this.addToStoredList(clientSession)
+    }
+
+    private removeFromStoredList(id: string) {
+        delete this.stored[id]
     }
 
     private addToStoredList(clientSession: ClientSessionInterface): void {

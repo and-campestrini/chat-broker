@@ -1,5 +1,5 @@
 import * as WebSocket from 'ws'
-import ClientSessionInterface from './clientSessionInterface'
+import ClientSessionInterface from './clientSession.interface'
 
 export default class ClientSession implements ClientSessionInterface {
     constructor(private id: string, private socket:WebSocket) {}
